@@ -1,0 +1,52 @@
+/* Asegurarse de que la imagen de fondo cubra todo el header */
+header {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Asegurar que la altura del header es dinámica en base a la pantalla */
+header {
+  height: 70vh; /* Para pantallas pequeñas */
+}
+
+@media (min-width: 640px) {
+  header {
+    height: 80vh; /* Para pantallas medianas (por ejemplo, tablets) */
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 90vh; /* Para pantallas grandes (por ejemplo, desktops) */
+  }
+}
+
+/* Ajuste de fuentes para pantallas más pequeñas */
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
